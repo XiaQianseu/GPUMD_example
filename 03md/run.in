@@ -1,0 +1,8 @@
+potential   ./nep.txt
+velocity    300
+
+ensemble    nvt_lan 300 300 100
+time_step   1
+dump_thermo 10
+dump_exyz   1000 1 1         # 每1000步输出一次位置、速度和力到 dump.xyz
+run         10000
