@@ -1,0 +1,56 @@
+#####Electron steps:
+ISTART=0
+ICHARG=2
+NELM=200
+ISMEAR=0
+SIGMA=0.05
+ISPIN=1
+EDIFF=1.0e-05
+PREC=L
+ALGO = N
+GGA = PE
+
+#####Ion steps:
+IBRION=0
+NSW=4000
+ISIF=0
+EDIFFG=-0.001
+
+#####DOS and bands: 
+LORBIT = 11
+
+#####Parallel parameters:
+NPAR=4
+LPLANE = .TRUE.
+LSCALAPACK=F
+LSCALU=F
+NSIM = 4
+
+#####Other settings:
+ISYM=0
+SYMPREC=1E-4
+
+#####Customized settings:
+AMIN=0.01
+LREAL=F
+LDAU=T
+LDAUTYPE=2
+LMAXMIX=4
+LASPH=T
+LDAUL= -1 -1 2
+LDAUU= 0.0 0.0 5.1
+LDAUJ= 0.0 0.0 0
+ENCUT=312.390
+EIDFF = 1E-4
+TEBEG = 500
+TEEND = 500
+SMASS = 3
+MAXMIX = 40
+IALGO = 48
+POTIM = 1.0
+APACO = 10
+NPACO = 200
+LCHARG = F
+LWAVE = F
+NWRITE = 0
+

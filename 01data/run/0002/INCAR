@@ -1,0 +1,52 @@
+!control
+ISTART=0
+ICHARG=2
+ENCUT = 450
+NELM = 200
+ISMEAR=0
+SIGMA=0.01
+ISPIN=2
+EDIFF=1E-6
+PREC=A
+ALGO = N
+GGA = PE
+
+#####Ion steps:
+IBRION=-1
+NSW=0
+ISIF=2
+EDIFFG=-0.001
+
+#####DOS and bands: 
+LORBIT = 11
+
+!speed
+NPAR=4
+LPLANE = .TRUE.
+LSCALAPACK=F
+LSCALU=F
+NSIM   = 4
+
+ISYM=-1
+
+LREAL = F
+
+IVDW=12
+
+LWAVE=F
+LCHARG=F
+
+
+!+U
+LDAU = T
+LDAUTYPE = 2
+LMAXMIX = 4
+LDAUL=  -1  -1  2
+LDAUU= 0.0  0.0  5.1
+LDAUJ= 0.0  0.0  0.0
+LASPH=T  #控制计算中是否考虑非球形电荷密度贡献
+
+AMIX = 0.02
+BMIX = 0.0001
+AMIX_MAG = 0.8
+BMIX_MAG = 0.0001
